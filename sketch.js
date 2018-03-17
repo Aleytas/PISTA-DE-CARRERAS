@@ -78,10 +78,10 @@ function derecha()
 	let xr=750;  let xa=750;  let xc=750;  let xv=750;
 	let yr=450;    let ya=475;    let yc=500;    let yv=525;
 
-	image(rojo[0],  xr+i, yr+j, 50, 50); // (image(El nombre y posicion del arreglo, coordenada X, Coordenada Y, alto,ancho))
-	//image(azul[0],  xa+i, ya, 50, 50); 
-	//image(cafe[0],  xc+i, yc, 50, 50); 
-	//image(verde[0], xv+i, yv, 50, 50);
+	image(rojo[0],  xr+i, yr, 50, 50); // (image(El nombre y posicion del arreglo, coordenada X, Coordenada Y, alto,ancho))
+	image(azul[0],  xa+i, ya, 50, 50); 
+	image(cafe[0],  xc+i, yc, 50, 50); 
+	image(verde[0], xv+i, yv, 50, 50);
 
 	i++
 }
@@ -107,19 +107,19 @@ function arriba()
 	let yr=375;    let ya=380;    let yc=500;    let yv=500;
 
 	image(rojo[3], xr, yr+j, 50, 50); 
-	//image(azul[3], xa, ya+j, 50, 50); 
-	//image(cafe[3], xc, yc+j, 50, 50); 
-	//image(verde[3],xv, yv+j, 50, 50);
+	image(azul[3], xa, ya+j, 50, 50); 
+	image(cafe[3], xc, yc+j, 50, 50); 
+	image(verde[3],xv, yv+j, 50, 50);
 
 	j--;
 }
 
 function abajo()
 {
-	image(rojo[2], xr+i, 450+j, 50, 50); 
-	image(azul[2], xa+i, 475+j, 50, 50); 
-	image(cafe[2], xc+i, 500+j, 50, 50); 
-	image(verde[2],xv+i, 525+j, 50, 50);
+	image(rojo[2], xr, yr+j, 50, 50); 
+	image(azul[2], xa, ya+j, 50, 50); 
+	image(cafe[2], xc, yc+j, 50, 50); 
+	image(verde[2],xv, yv+j, 50, 50);
 
 	j++;
 }
